@@ -5,6 +5,6 @@ public class App {
         System.out.println("Hello, World!");
         System.out.println("huy");
         Scanner input = new Scanner(System.in);
-        
+        System.out.println("huy");
     }
 }
