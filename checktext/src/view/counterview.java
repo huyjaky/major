@@ -44,14 +44,14 @@ public class counterview extends JFrame {
         JPanel panel2 = new JPanel(); panel2.setLayout(new GridLayout());
 
         this.text = new JTextField();
-        JLabel label1 = new JLabel("nhap chuoi can check: ");
+        JLabel label1 = new JLabel("nhap chuoi can check: "); label1.setFont(font);
 
         panel2.add(label1); panel2.add(text);
 
         //panel3
         JPanel panel3 = new JPanel(); panel3.setLayout(new GridLayout());
 
-        JButton button_check = new JButton("CHECK!");
+        JButton button_check = new JButton("CHECK!"); button_check.setFont(font);
         button_check.addActionListener(action);
         panel3.add(button_check);
 
@@ -59,7 +59,7 @@ public class counterview extends JFrame {
         this.setLayout(new GridLayout(4, 1));
         this.add(panel1);
         this.add(panel2);
-        this.label_answer = new JLabel("ket qua la : co " + this.modul.get_count() + " " + text.getText());
+        this.label_answer = new JLabel("ket qua la : co " + this.modul.get_count() + " " + text.getText(), JLabel.CENTER); this.label_answer.setFont(font);
         this.add(this.label_answer);
         this.add(panel3);
 
