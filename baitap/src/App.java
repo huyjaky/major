@@ -31,6 +31,7 @@ public class App {
         
         System.out.println("huy dep trai vl");
         
+        System.out.println("huy");
     }
 }
 //nhap vao mot mang  hai chieu co n hang va m cot 
