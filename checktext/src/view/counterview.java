@@ -44,7 +44,7 @@ public class counterview extends JFrame {
         JPanel panel2 = new JPanel(); panel2.setLayout(new GridLayout());
 
         this.text = new JTextField();
-        JLabel label1 = new JLabel("nhap chuoi can check: "); label1.setFont(font);
+        JLabel label1 = new JLabel("nhap chuoi can check: "); Font font2 = new Font("JetBrains Mono", Font.BOLD, 18); label1.setFont(font2);
 
         panel2.add(label1); panel2.add(text);
 
