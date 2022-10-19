@@ -8,6 +8,12 @@ public class App {
         Scanner input = new Scanner(System.in);
         Integer rows = input.nextInt();
         Integer cols = input.nextInt();
+        if (rows < cols) {
+            cols = rows;
+        } else if (rows > cols) {
+            rows = cols;
+        }
+
         int[][] array = new int[rows][cols];
         for (int i = 0 ; i < rows; i++) {
             for (int a = 0; a < cols; a++) {
@@ -15,6 +21,7 @@ public class App {
             }
         }
 
+        int[] min_rows = new int[rows];
         int duong_cheo_chinh = 0;
         int duong_cheo_phu = 0;
         int count = 0;
@@ -24,14 +31,19 @@ public class App {
             count += 1;
             duong_cheo_phu += i[cols-1];
             cols -= 1;
+            Integer max = 0;
+            for (int a : i) {
+                if (max < a) {
+                    max = a;
+                }
+            }
         }
         System.out.println(duong_cheo_chinh);
         
         System.out.println(duong_cheo_phu);
         
-        System.out.println("huy dep trai vl");
-        
-        System.out.println("huy");
+
+
     }
 }
 //nhap vao mot mang  hai chieu co n hang va m cot 
