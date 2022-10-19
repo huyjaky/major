@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 import org.w3c.dom.views.DocumentView;
@@ -21,22 +23,43 @@ public class App {
             }
         }
 
-        int[] min_rows = new int[rows];
+        Map<Integer, String> map_rows = new HashMap<Integer, String>();
+        Map<Integer, String> map_cols = new HashMap<Integer, String>();
+
         int duong_cheo_chinh = 0;
         int duong_cheo_phu = 0;
         int count = 0;
-        for (int[] i : array) {
-            System.out.println(Arrays.toString(i));
-            duong_cheo_chinh += i[count];
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(Arrays.toString(array[i]));
+            duong_cheo_chinh += array[i][count];
             count += 1;
-            duong_cheo_phu += i[cols-1];
+            duong_cheo_phu += array[i][cols-1];
             cols -= 1;
+            Integer x = 0;
+            Integer y = 0;
             Integer max = 0;
-            for (int a : i) {
-                if (max < a) {
-                    max = a;
+            for (int a = 0; a < array[i].length; a++) {
+                if (max <= array[i][a]) {
+                    max = array[i][a];
+                    x = i;
+                    y = a;
                 }
             }
+            String locaeString = x+" "+y;
+            map_rows.put(max, locaeString);
+            
+            Integer min = 0;
+            Integer count2 = 0;
+            for (int[] a : array) {
+                if (a[i] < min ) {
+                    min = a[i];
+                    x = count2;
+                    y = i;
+                }
+                count2 += 1;
+            }
+            locaeString = x+" "+y;
+            map_cols.put(max, locaeString);
         }
         System.out.println(duong_cheo_chinh);
         
