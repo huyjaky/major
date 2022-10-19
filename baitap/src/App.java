@@ -1,4 +1,7 @@
+import java.util.Arrays;
 import java.util.Scanner;
+
+import org.w3c.dom.views.DocumentView;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,9 +14,18 @@ public class App {
                 array[i][a] = input.nextInt();
             }
         }
+
+        int duong_cheo_chinh = 0;
+        int duong_cheo_phu = 0;
+        int count = 0;
         for (int[] i : array) {
-            System.out.println(i.toString());
+            System.out.println(Arrays.toString(i));
+            duong_cheo_chinh += i[count];
+            count += 1;
+            duong_cheo_phu += i[cols];
+            cols -= 1;
         }
+        System.out.println(duong_cheo_chinh);
         
     }
 }
