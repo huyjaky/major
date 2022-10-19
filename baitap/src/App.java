@@ -3,7 +3,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import org.w3c.dom.views.DocumentView;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -61,11 +60,12 @@ public class App {
             locaeString = x+" "+y;
             map_cols.put(min, locaeString);
         }
+        input.close();
         System.out.println(duong_cheo_chinh);
         
         System.out.println(duong_cheo_phu);
         
-        
+
 
 
     }
