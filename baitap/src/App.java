@@ -22,11 +22,12 @@ public class App {
             System.out.println(Arrays.toString(i));
             duong_cheo_chinh += i[count];
             count += 1;
-            duong_cheo_phu += i[cols];
+            duong_cheo_phu += i[cols-1];
             cols -= 1;
         }
         System.out.println(duong_cheo_chinh);
         
+        System.out.println(duong_cheo_phu);
     }
 }
 //nhap vao mot mang  hai chieu co n hang va m cot 
