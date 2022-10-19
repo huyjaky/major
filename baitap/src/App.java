@@ -30,6 +30,7 @@ public class App {
         System.out.println(duong_cheo_phu);
         
         System.out.println("huy dep trai vl");
+        
     }
 }
 //nhap vao mot mang  hai chieu co n hang va m cot 
