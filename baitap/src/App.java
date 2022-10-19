@@ -48,7 +48,7 @@ public class App {
             String locaeString = x+" "+y;
             map_rows.put(max, locaeString);
             
-            Integer min = 0;
+            Integer min = 99;
             Integer count2 = 0;
             for (int[] a : array) {
                 if (a[i] < min ) {
@@ -59,11 +59,12 @@ public class App {
                 count2 += 1;
             }
             locaeString = x+" "+y;
-            map_cols.put(max, locaeString);
+            map_cols.put(min, locaeString);
         }
         System.out.println(duong_cheo_chinh);
         
         System.out.println(duong_cheo_phu);
+        
         
 
 
