@@ -1,17 +1,19 @@
 package view;
 
+import java.awt.Color;
 import java.awt.Font;
+import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import controller.counterlistener;
 import modul.countermodul;
-import java.awt.*;
 
 public class counterview extends JFrame {
     private countermodul modul = new countermodul();
@@ -37,8 +39,9 @@ public class counterview extends JFrame {
         //panel1
         JPanel panel1 = new JPanel(); panel1.setLayout(new GridLayout());
 
-        this.jtext_area = new JTextArea(); jtext_area.setFont(font); jtext_area.setOpaque(true); jtext_area.setBackground(Color.white);
-        panel1.add(jtext_area);
+        this.jtext_area = new JTextArea(); jtext_area.setFont(font); jtext_area.setOpaque(true); jtext_area.setBackground(Color.CYAN);
+        JScrollPane scroll = new JScrollPane(this.jtext_area);
+        panel1.add(scroll);
 
         //panel2
         JPanel panel2 = new JPanel(); panel2.setLayout(new GridLayout());
