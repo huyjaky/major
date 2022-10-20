@@ -42,7 +42,7 @@ class Result {
             sum1 += v1;
             sum2 += v2;
         }
-        
+        System.out.println("huy");
     }
 }
 
