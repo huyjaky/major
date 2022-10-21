@@ -1,5 +1,6 @@
+import java.util.Arrays;
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -7,7 +8,25 @@ public class App {
         Scanner input = new Scanner(System.in);
         String S = input.nextLine();
         input.close();
-        S = S.replaceAll("[^a-zA-Z]", ".");
-        System.out.println(S);
+        if (S.length() != 15) {
+            System.out.println("false");
+            return;
+        }
+        String[] array = S.split("[.]");
+        if (array.length == 0) {
+            System.out.println("true");
+            return;
+        }
+        Integer count = 0;
+        for (String i : array) {
+            if (i.length() == 3) {
+                count += 1;
+            }
+        }
+        if (count == 4) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
     }
 }
