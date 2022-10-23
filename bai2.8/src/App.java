@@ -21,6 +21,6 @@ public class App {
                 break;
             }
         }
-        System.out.println(years); System.out.println(months); System.out.println(days);
+        System.out.printf("%d \n%d \n%d", years, months, days);
     }
 }
