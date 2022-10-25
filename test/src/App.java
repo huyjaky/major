@@ -31,8 +31,9 @@ public class App {
         //     }
         // }
         // System.out.println("script for present java history".toUpperCase());
-        Pattern regex = Pattern.compile("^[a-zA-Z0-9]+[@][a-z]+[.][a-z]$");
-        String s = "bd@tnmbonline.com";
+        Pattern regex = Pattern.compile("^[a-zA-Z0-9]+[@][a-z.]+[.][a-z]$");
+        String s = "bd@tnmbonlinejk.SDF.SDF.com";
+        System.out.println(s);
         if (regex.matcher(s).find()) {
             System.out.println(s);
         }
