@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -31,13 +32,20 @@ public class App {
         //     }
         // }
         // System.out.println("script for present java history".toUpperCase());
-        Pattern regex = Pattern.compile("^[a-zA-Z0-9]+[@][a-z.]+[.][a-z]$");
-        String s = "bd@tnmbonlinejk.SDF.SDF.com";
-        System.out.println(s);
+        // Pattern regex = Pattern.compile("^[a-zA-Z0-9]+[@][a-z.]+[.][a-z]$");
+        // String s = "bd@tnmbonlinejk.SDF.SDF.com";
+        // System.out.println(s);
+        // if (regex.matcher(s).find()) {
+        //     System.out.println(s);
+        // }
+        // String s = "CR	gm@cr.railnet.gov.in	Mumbai	drm@bb.railnet.gov.in";
+        // String [] array = s.split("[]");
+        // System.out.println(Arrays.toString(array));
+        String s = "256";
+        Pattern regex = Pattern.compile("[0-9]{1}", Pattern.CASE_INSENSITIVE);
         if (regex.matcher(s).find()) {
             System.out.println(s);
         }
-        
         
     }
 }

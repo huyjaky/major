@@ -1,10 +1,7 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.TreeSet;
+import java.util.regex.Pattern;
 
-import javax.print.DocFlavor.STRING;
 
 public class Solution {
 
@@ -30,6 +27,7 @@ public class Solution {
         for (String i : list) {
             s += i + ";";
         }
+        list.clear();
         System.out.println(s.replaceAll("[;]$", ""));
         input.close();
     }
