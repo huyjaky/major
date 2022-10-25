@@ -17,11 +17,11 @@ public class Solution {
         
         for (int i = 0; i < count; i++) {
             String s = input.nextLine();
-            String[] array = s.split(" ");
+            String[] array = s.split("[\\s]");
             Pattern regex = Pattern.compile("[a-zA-Z0-9]+[@][a-z]+[.][a-z]");
             for (String a : array) {
                 if (regex.matcher(a).find()) {
-                    a = a.replaceAll("[.]$", "");
+                    a = a.replaceAll("[^a-zA-Z0-9]$", "");
                     list.add(a);
                 }
             }
