@@ -7,7 +7,7 @@ public class test {
         while (true) {
             System.out.println("--------------------------------------------");
             System.out.println("1. nhap thong tin sinh vien" + "\n" +
-                                "2. in ra danh sanh sinh vien" + "\n" +
+                                "2. in ra danh sanh sinh vien" + "\n" + 
                                 "3. in ra sinh vien co diem so cao nhat");
             System.out.println("--------------------------------------------");
             System.out.print("nhap lua chon: "); Integer choice = input.nextInt();
