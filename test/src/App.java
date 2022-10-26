@@ -46,6 +46,8 @@ public class App {
         if (regex.matcher(s).find()) {
             System.out.println(s);
         }
+        System.out.println("vl chim en");
+        System.out.println("vailol luon dau cat moi");
         
     }
 }
