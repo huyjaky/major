@@ -5,6 +5,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.awt.*;
+
+import javax.swing.AbstractButton;
 
 import view.counterview;
 public class counterlistener implements MouseListener, MouseMotionListener, ActionListener {
@@ -71,8 +74,18 @@ public class counterlistener implements MouseListener, MouseMotionListener, Acti
         String command = e.getActionCommand();
         if (command.equals("reset")) {
             this.view.reset();
-        } else {
+        } else if (command.equals("exit")) {
             System.exit(0);
+        } else if (command.equals("toolbar")) {
+            AbstractButton s = (AbstractButton) e.getSource();
+            boolean check = s.getModel().isSelected();
+            if (check) {
+                this.view.paneltool.setLayout(new GridLayout(2,1));
+                this.view.addtoolbar();
+            } else {
+                this.view.paneltool.setLayout(new GridLayout());
+                this.view.disabletoolbar();
+            }
         }
         
     }
