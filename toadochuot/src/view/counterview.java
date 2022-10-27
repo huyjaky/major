@@ -1,11 +1,14 @@
 package view;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
+import javax.swing.JToolBar;
 import javax.swing.KeyStroke;
 
 import controller.counterlistener;
@@ -19,6 +22,7 @@ public class counterview extends JFrame {
     private JLabel result1, result2, result3;
     private counterlistener action = new counterlistener(this);
     private countermodul modul = new countermodul();
+    public JPopupMenu jpopupMenu;
 
     public counterview () {
         __init__();
@@ -30,6 +34,7 @@ public class counterview extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocation(200, 200);
         this.setSize(600, 600);
+        this.setLayout(new BorderLayout());
         
         Font font = new Font("JetBrains Mono", Font.BOLD, 23);
         
@@ -38,20 +43,33 @@ public class counterview extends JFrame {
         JMenu open = new JMenu("open");
         JMenuItem exit = new JMenuItem("exit"); exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.ALT_DOWN_MASK)); exit.addActionListener(action);
         JMenuItem reset = new JMenuItem("reset"); reset.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_DOWN_MASK)); reset.addActionListener(action); 
-
         
         open.add(reset);
         open.addSeparator();
         open.add(exit);
         menu_bar.add(open);
 
+        //tao toolbar
+        JToolBar toolBar = new JToolBar();
+        JButton cut = new JButton("cut");
+        JButton copy = new JButton("copy");
+        JButton paste = new JButton("paste");
+        toolBar.add(cut); toolBar.add(copy); toolBar.add(paste);
+
+        //tao menu chuot trai
+        jpopupMenu = new JPopupMenu();
+        JMenuItem copyItem = new JMenuItem("copy"); copyItem.setFont(font);
+        JMenuItem cutItem = new JMenuItem("cut"); cutItem.setFont(font);
+        JMenuItem pasteItem = new JMenuItem("paste"); pasteItem.setFont(font);
+        jpopupMenu.add(copyItem); jpopupMenu.add(cutItem); jpopupMenu.add(pasteItem);
+        
+        this.add(jpopupMenu);
+
         //panel1
         JPanel panel1 = new JPanel();
-        panel1.setBackground(Color.cyan);
+        panel1.setBackground(Color.CYAN);
         panel1.addMouseListener(action);
         panel1.addMouseMotionListener(action);
-
-
 
         //panel2
         JPanel panel2 = new JPanel();
@@ -70,8 +88,9 @@ public class counterview extends JFrame {
         panel2.add(label3); panel2.add(result3);
 
         //this
-        this.setLayout(new BorderLayout());
-        this.add(menu_bar, BorderLayout.NORTH);
+        JPanel paneltool = new JPanel(); paneltool.setLayout(new GridLayout(2,1));
+        paneltool.add(menu_bar); paneltool.add(toolBar);
+        this.add(paneltool, BorderLayout.NORTH);
         this.add(panel1, BorderLayout.CENTER);
         this.add(panel2, BorderLayout.SOUTH);
 

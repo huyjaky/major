@@ -1,6 +1,10 @@
 package controller;
 
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
 import view.counterview;
 public class counterlistener implements MouseListener, MouseMotionListener, ActionListener {
@@ -14,7 +18,7 @@ public class counterlistener implements MouseListener, MouseMotionListener, Acti
     @Override
     public void mouseClicked(MouseEvent e) {
         // TODO Auto-generated method stub
-        this.view.getClickCount();
+        
     }
 
     @Override
@@ -35,12 +39,16 @@ public class counterlistener implements MouseListener, MouseMotionListener, Acti
     public void mousePressed(MouseEvent e) {
         // TODO Auto-generated method stub
         
+        
+        this.view.getClickCount();
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         // TODO Auto-generated method stub
-        
+        if (e.isPopupTrigger()) {
+            this.view.jpopupMenu.show(e.getComponent(), e.getX(), e.getY());
+        }
     }
 
     @Override
