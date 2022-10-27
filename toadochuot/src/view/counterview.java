@@ -6,11 +6,14 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.KeyStroke;
 
 import controller.counterlistener;
 import modul.countermodul;
 
 import java.awt.*;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 
 public class counterview extends JFrame {
     private JLabel result1, result2, result3;
@@ -29,12 +32,17 @@ public class counterview extends JFrame {
         this.setSize(600, 600);
         
         Font font = new Font("JetBrains Mono", Font.BOLD, 23);
+        
+        //tao menubar va gan cac nut tat cho cac lua chon
         JMenuBar menu_bar = new JMenuBar();
         JMenu open = new JMenu("open");
-        JMenuItem reset = new JMenuItem("reset");
-        reset.addActionListener(action);
+        JMenuItem exit = new JMenuItem("exit"); exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.ALT_DOWN_MASK)); exit.addActionListener(action);
+        JMenuItem reset = new JMenuItem("reset"); reset.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_DOWN_MASK)); reset.addActionListener(action); 
+
         
         open.add(reset);
+        open.addSeparator();
+        open.add(exit);
         menu_bar.add(open);
 
         //panel1
@@ -54,7 +62,7 @@ public class counterview extends JFrame {
         JLabel label3 = new JLabel("Mouse in component: "); label3.setFont(font);
 
         this.result1 = new JLabel("x/y"); result1.setFont(font); 
-        this.result2 = new JLabel("n"); result2.setFont(font); this.result2.addMouseMotionListener(action);
+        this.result2 = new JLabel("n"); result2.setFont(font); 
         this.result3 = new JLabel("null"); result3.setFont(font);
 
         panel2.add(label1); panel2.add(result1);

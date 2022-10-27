@@ -63,6 +63,8 @@ public class counterlistener implements MouseListener, MouseMotionListener, Acti
         String command = e.getActionCommand();
         if (command.equals("reset")) {
             this.view.reset();
+        } else {
+            System.exit(0);
         }
         
     }
