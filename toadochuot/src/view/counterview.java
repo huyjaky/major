@@ -154,3 +154,9 @@ public class counterview extends JFrame {
     }
 
 }
+
+// chen image 86/87
+// chen phim tat cho menuitem 49/50
+// chen jcheckboxmenuitem  51
+// counterlistener thi co kiem cha lua chon trong jcheckboxmenuitem abstracbutton cac thu 82/83
+// menubar toolbar cac thu den o tren tu tim de
