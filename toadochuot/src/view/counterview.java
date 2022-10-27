@@ -2,6 +2,9 @@ package view;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 import controller.counterlistener;
@@ -26,6 +29,13 @@ public class counterview extends JFrame {
         this.setSize(600, 600);
         
         Font font = new Font("JetBrains Mono", Font.BOLD, 23);
+        JMenuBar menu_bar = new JMenuBar();
+        JMenu open = new JMenu("open");
+        JMenuItem reset = new JMenuItem("reset");
+        reset.addActionListener(action);
+        
+        open.add(reset);
+        menu_bar.add(open);
 
         //panel1
         JPanel panel1 = new JPanel();
@@ -44,7 +54,7 @@ public class counterview extends JFrame {
         JLabel label3 = new JLabel("Mouse in component: "); label3.setFont(font);
 
         this.result1 = new JLabel("x/y"); result1.setFont(font); 
-        this.result2 = new JLabel("n"); result2.setFont(font);
+        this.result2 = new JLabel("n"); result2.setFont(font); this.result2.addMouseMotionListener(action);
         this.result3 = new JLabel("null"); result3.setFont(font);
 
         panel2.add(label1); panel2.add(result1);
@@ -53,6 +63,7 @@ public class counterview extends JFrame {
 
         //this
         this.setLayout(new BorderLayout());
+        this.add(menu_bar, BorderLayout.NORTH);
         this.add(panel1, BorderLayout.CENTER);
         this.add(panel2, BorderLayout.SOUTH);
 
@@ -74,5 +85,11 @@ public class counterview extends JFrame {
 
     public void location (Integer x, Integer y) {
         this.result1.setText(x+"        "+y);
+    }
+
+    public void reset () {
+        this.result2.setText("n");
+        this.result3.setText("null");
+        this.result1.setText("x/y");
     }
 }
