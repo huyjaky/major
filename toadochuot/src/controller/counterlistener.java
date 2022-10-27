@@ -77,8 +77,12 @@ public class counterlistener implements MouseListener, MouseMotionListener, Acti
         } else if (command.equals("exit")) {
             System.exit(0);
         } else if (command.equals("toolbar")) {
+            
+            //kiem tra xem cai cho checkbox co dc tick hay chua
             AbstractButton s = (AbstractButton) e.getSource();
             boolean check = s.getModel().isSelected();
+            
+            
             if (check) {
                 this.view.paneltool.setLayout(new GridLayout(2,1));
                 this.view.addtoolbar();
@@ -86,7 +90,7 @@ public class counterlistener implements MouseListener, MouseMotionListener, Acti
                 this.view.paneltool.setLayout(new GridLayout());
                 this.view.disabletoolbar();
             }
-        }
+        } 
         
     }
     

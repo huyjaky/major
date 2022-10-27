@@ -1,5 +1,6 @@
 package view;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JFrame;
@@ -18,6 +19,7 @@ import modul.countermodul;
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
+import java.net.URL;
 
 public class counterview extends JFrame {
     private JLabel result1, result2, result3;
@@ -77,8 +79,15 @@ public class counterview extends JFrame {
         this.add(jpopupMenu);
 
         //panel1
-        JPanel panel1 = new JPanel();
-        panel1.setBackground(Color.CYAN);
+        JPanel panel1 = new JPanel(); panel1.setLayout(new GridLayout());
+        JLabel labelpad = new JLabel(); 
+        panel1.add(labelpad);
+        labelpad.setOpaque(true); labelpad.setBackground(Color.CYAN);
+        URL url_labelpad = counterview.class.getResource("background_labelpad.png");
+        Image img_background_labelpad = Toolkit.getDefaultToolkit().createImage(url_labelpad).getScaledInstance(600, 600, DO_NOTHING_ON_CLOSE);
+
+        labelpad.setIcon(new ImageIcon(img_background_labelpad));
+        
         panel1.addMouseListener(action);
         panel1.addMouseMotionListener(action);
 
@@ -105,6 +114,11 @@ public class counterview extends JFrame {
         this.add(panel1, BorderLayout.CENTER);
         this.add(panel2, BorderLayout.SOUTH);
 
+        URL url = counterview.class.getResource("coding.png");
+        Image img = Toolkit.getDefaultToolkit().createImage(url);
+        this.setIconImage(img);
+        
+        this.setFont(font);
 
     }
 
