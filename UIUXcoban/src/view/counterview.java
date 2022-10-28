@@ -72,6 +72,7 @@ public class counterview extends JFrame {
 
         panel4.add(this.label_tongbill); panel4.add(button_tinhbill);
 
+
         // menubar
         JMenuBar menubar = new JMenuBar();
 
@@ -81,20 +82,22 @@ public class counterview extends JFrame {
         menu.add(this.indanhsach);
         menubar.add(menu);
     
+        // panel 5
+        JPanel panel5 = new JPanel(); panel5.setLayout(new GridLayout(2, 1));
+        JLabel label_thucdon = new JLabel("thuc don nha hang", JLabel.CENTER); label_thucdon.setFont(font);
+        
+        panel5.add(menubar); panel5.add(label_thucdon); 
 
         // this
-        JLabel label_thucdon = new JLabel("thuc don nha hang", JLabel.CENTER); label_thucdon.setFont(font);
-
         this.setLayout(new BorderLayout());
-        this.add(menubar);
-        this.add(label_thucdon, BorderLayout.NORTH);
+        this.add(panel5, BorderLayout.NORTH);
         this.add(panel3, BorderLayout.CENTER);
         this.add(panel4, BorderLayout.SOUTH);
         
     }
 
     public void add_bill (Double gia) {
-        this.modul.tong_gia(gia*1000);
+        this.modul.tong_gia(gia*1000d);
     }
 
     
