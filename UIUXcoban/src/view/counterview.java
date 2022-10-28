@@ -1,16 +1,29 @@
 package view;
 
 import java.awt.Font;
+import java.nio.file.ReadOnlyFileSystemException;
 
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+
+import controller.counterlistener;
+import modul.countermodul;
+
 import java.awt.*;
 
 public class counterview extends JFrame {
-    
+    private countermodul modul = new countermodul();
+    private JLabel label_tongbill;
+    private JMenuItem indanhsach;
+
     public counterview () {
         __init__();
         this.setVisible(true);
@@ -23,13 +36,16 @@ public class counterview extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         Font font = new Font("Jetbrains Mono", Font.BOLD, 23);
+        counterlistener action = new counterlistener(this);
 
         // panel1
         JPanel panel1 = new JPanel(); panel1.setLayout(new GridLayout(1, 1, 10, 10));
 
-        JRadioButton radio_com = new JRadioButton("com"); radio_com.setFont(font);
-        JRadioButton radio_pho = new JRadioButton("pho"); radio_pho.setFont(font);
-        JRadioButton radio_banhmi = new JRadioButton("banh mi"); radio_banhmi.setFont(font);
+        ButtonGroup group = new ButtonGroup(); 
+        JRadioButton radio_com = new JRadioButton("com"); radio_com.setFont(font); radio_com.addActionListener(action);
+        JRadioButton radio_pho = new JRadioButton("pho"); radio_pho.setFont(font); radio_pho.addActionListener(action);
+        JRadioButton radio_banhmi = new JRadioButton("banh mi"); radio_banhmi.setFont(font); radio_banhmi.addActionListener(action); 
+        group.add(radio_banhmi); group.add(radio_com); group.add(radio_pho);
 
         panel1.add(radio_com); panel1.add(radio_banhmi); panel1.add(radio_pho);
 
@@ -48,14 +64,38 @@ public class counterview extends JFrame {
         JPanel panel3 = new JPanel(); panel3.setLayout(new GridLayout(2, 1));
         panel3.add(panel1); panel3.add(panel2);
 
+        // panel4
+        JPanel panel4 = new JPanel(); panel4.setLayout(new GridLayout(1, 2));
+
+        JButton button_tinhbill = new JButton("tinh tong"); button_tinhbill.setFont(font);
+        this.label_tongbill = new JLabel("tong bill la: ");
+
+        panel4.add(this.label_tongbill); panel4.add(button_tinhbill);
+
+        // menubar
+        JMenuBar menubar = new JMenuBar();
+
+        JMenu menu = new JMenu("danh sach"); 
+        this.indanhsach = new JMenuItem("in danh sach");
+        
+        menu.add(this.indanhsach);
+        menubar.add(menu);
+    
+
         // this
         JLabel label_thucdon = new JLabel("thuc don nha hang", JLabel.CENTER); label_thucdon.setFont(font);
 
         this.setLayout(new BorderLayout());
+        this.add(menubar);
         this.add(label_thucdon, BorderLayout.NORTH);
         this.add(panel3, BorderLayout.CENTER);
+        this.add(panel4, BorderLayout.SOUTH);
         
-
-
     }
+
+    public void add_bill (Double gia) {
+        this.modul.tong_gia(gia*1000);
+    }
+
+    
 }
