@@ -58,7 +58,8 @@ public class counterlistener implements MouseListener, MouseMotionListener {
         // TODO Auto-generated method stub
         Integer x = e.getX();
         Integer y = e.getY();
-        this.view.location(x, y);
+        this.view.location(x, y); //cai nay de lay toa do de settext cai jlabel result ben counterview
+
     }
     
 }
