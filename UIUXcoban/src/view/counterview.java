@@ -4,6 +4,7 @@ import java.awt.Font;
 
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import java.awt.*;
@@ -35,20 +36,26 @@ public class counterview extends JFrame {
         // panel2
         JPanel panel2 = new JPanel();
 
-        JCheckBox checkbox_trasua = new JCheckBox("tra sua");
-        JCheckBox checkbox_cocacola = new JCheckBox("cocacola");
-        JCheckBox checkbox_nem = new JCheckBox("nem");
-        JCheckBox checkbox_banhngot = new JCheckBox("banh ngot");
+        JCheckBox checkbox_trasua = new JCheckBox("tra sua"); checkbox_trasua.setFont(font);
+        JCheckBox checkbox_cocacola = new JCheckBox("cocacola"); checkbox_cocacola.setFont(font);
+        JCheckBox checkbox_nem = new JCheckBox("nem"); checkbox_nem.setFont(font);
+        JCheckBox checkbox_banhngot = new JCheckBox("banh ngot"); checkbox_banhngot.setFont(font);
 
         panel2.setLayout(new GridLayout(2, 2));
         panel2.add(checkbox_trasua); panel2.add(checkbox_banhngot); panel2.add(checkbox_cocacola); panel2.add(checkbox_nem);
 
+        // panel3
+        JPanel panel3 = new JPanel(); panel3.setLayout(new GridLayout(2, 1));
+        panel3.add(panel1); panel3.add(panel2);
+
+        // this
+        JLabel label_thucdon = new JLabel("thuc don nha hang", JLabel.CENTER); label_thucdon.setFont(font);
+
         this.setLayout(new BorderLayout());
-        this.add(panel1, BorderLayout.NORTH);
-        this.add(panel2, BorderLayout.CENTER);
+        this.add(label_thucdon, BorderLayout.NORTH);
+        this.add(panel3, BorderLayout.CENTER);
         
 
-        
 
     }
 }
