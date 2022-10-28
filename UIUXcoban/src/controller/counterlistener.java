@@ -2,8 +2,9 @@ package controller;
 
 import java.awt.event.*;
 
-import javax.sound.sampled.SourceDataLine;
 import javax.swing.AbstractButton;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 
 import view.counterview;
 
@@ -27,6 +28,10 @@ public class counterlistener implements ActionListener {
             this.view.add_bill(30d); 
         } else if (f && s.equals("banh mi")) {
             this.view.add_bill(10d);
+        } else if (s.equals("thuc don nha hang")){
+            JScrollPane scroll = new JScrollPane();
+            JLabel label_phu = new JLabel(this.view.in_danhsach());
+            
         }
     }
     

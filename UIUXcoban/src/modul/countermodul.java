@@ -16,10 +16,12 @@ public class countermodul {
         this.gia_ca = 0d;
     }
 
-    public void in_danhsach_giaca() {
+    public String in_danhsach_giaca() {
+        String s = "";
         for (int i = 0; i < this.danhsach_giaca.size(); i++) {
             System.out.println(this.danhsach_giaca.get(i));
         }
+        return s;
     }
 }
 

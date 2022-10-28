@@ -1,7 +1,6 @@
 package view;
 
 import java.awt.Font;
-import java.nio.file.ReadOnlyFileSystemException;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -77,7 +76,7 @@ public class counterview extends JFrame {
         JMenuBar menubar = new JMenuBar();
 
         JMenu menu = new JMenu("danh sach"); 
-        this.indanhsach = new JMenuItem("in danh sach");
+        this.indanhsach = new JMenuItem("in danh sach"); 
         
         menu.add(this.indanhsach);
         menubar.add(menu);
@@ -100,5 +99,7 @@ public class counterview extends JFrame {
         this.modul.tong_gia(gia*1000d);
     }
 
-    
+    public String in_danhsach () {
+        return this.modul.in_danhsach_giaca();
+    }
 }
