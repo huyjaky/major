@@ -41,13 +41,13 @@ public class App {
         // String s = "CR	gm@cr.railnet.gov.in	Mumbai	drm@bb.railnet.gov.in";
         // String [] array = s.split("[]");
         // System.out.println(Arrays.toString(array));
-        String s = "256";
-        Pattern regex = Pattern.compile("[0-9]{1}", Pattern.CASE_INSENSITIVE);
-        if (regex.matcher(s).find()) {
-            System.out.println(s);
-        }
-        System.out.println("vl chim en");
-        System.out.println("vailol luon dau cat moi");
-        
+        // String s = "256";
+        // Pattern regex = Pattern.compile("[0-9]{1}", Pattern.CASE_INSENSITIVE);
+        // if (regex.matcher(s).find()) {
+        //     System.out.println(s);
+        // }
+        // System.out.println("vl chim en");
+        // System.out.println("vailol luon dau cat moi");
+        MYELT
     }
 }

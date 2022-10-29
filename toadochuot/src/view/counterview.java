@@ -48,7 +48,7 @@ public class counterview extends JFrame {
         JMenu open = new JMenu("open");
         JMenuItem exit = new JMenuItem("exit"); exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.ALT_DOWN_MASK)); exit.addActionListener(action);
         JMenuItem reset = new JMenuItem("reset"); reset.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_DOWN_MASK)); reset.addActionListener(action); 
-        JCheckBoxMenuItem  toolbar = new JCheckBoxMenuItem("toolbar"); reset.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_DOWN_MASK));
+        JCheckBoxMenuItem  toolbar = new JCheckBoxMenuItem("toolbar"); toolbar.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_DOWN_MASK));
         toolbar.addActionListener(action);
 
         open.add(reset);
