@@ -120,6 +120,10 @@ public class counterview extends JFrame {
         
         this.setFont(font);
 
+        URL url2 = counterview.class.getResource("coding.png");
+        
+        
+
     }
 
     public void getClickCount() {
@@ -152,6 +156,7 @@ public class counterview extends JFrame {
     public void disabletoolbar() {
         this.paneltool.remove(this.toolBar);
     }
+
 
 }
 

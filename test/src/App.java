@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -48,6 +49,11 @@ public class App {
         // }
         // System.out.println("vl chim en");
         // System.out.println("vailol luon dau cat moi");
+<<<<<<< HEAD
         MYELT
+=======
+        LocalDate lc = LocalDate.now();
+        System.out.println(lc.now());
+>>>>>>> afbbfb82934212493fd22297c83db4b686eb53d9
     }
 }
