@@ -4,25 +4,39 @@ import java.time.LocalDate;
 import java.util.HashMap;
 
 public class countermodul {
-    private Double gia_ca;
+    public Double gia_ca = 0d;
     private HashMap <Double, LocalDate> danhsach_giaca = new HashMap<Double, LocalDate>();
 
-    public void tong_gia(Double gia) {
+    public void tong_gia_monchinh(Double gia) { //monchinh
         this.gia_ca += gia;
     }
 
-    public void in_tong_hoadon() {
-        this.danhsach_giaca.put(gia_ca, LocalDate.now());
-        this.gia_ca = 0d;
+    public void tong_gia_monphu (Double gia) {
+        this.gia_ca += gia;
     }
 
-    public String in_danhsach_giaca() {
+    public void xoa_don_monchinh(Double gia) {
+        this.gia_ca -= gia;
+    }
+
+    public void xoa_don_monphu (Double gia) {
+        this.gia_ca -= gia;
+    }
+
+    public String inhoadon() {
+        LocalDate lc = LocalDate.now();
+        this.danhsach_giaca.put(this.gia_ca,lc);
+        return this.gia_ca+"";
+    }
+
+    public String in_lichsu_hoadon() {
         String s = "";
         for (int i = 0; i < this.danhsach_giaca.size(); i++) {
-            System.out.println(this.danhsach_giaca.get(i));
+            s += this.danhsach_giaca.get(i);
         }
-        return s;
+        return this.gia_ca + "";
     }
+
 }
 
 // o day thi dung cai abstract button va dung switch case de cong gia ca lai va khi goi modul in tong hoa don thi no se reset gia ca
