@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.Font;
+import java.awt.event.KeyEvent;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -12,6 +13,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.KeyStroke;
 
 import controller.counterlistener;
 import modul.countermodul;
@@ -51,10 +53,17 @@ public class counterview extends JFrame {
         // panel2
         JPanel panel2 = new JPanel();
 
+<<<<<<< HEAD
         JCheckBox checkbox_trasua = new JCheckBox("tra sua"); checkbox_trasua.setFont(font);
         JCheckBox checkbox_cocacola = new JCheckBox("cocacola"); checkbox_cocacola.setFont(font);
         JCheckBox checkbox_nem = new JCheckBox("nem"); checkbox_nem.setFont(font);
         JCheckBox checkbox_banhngot = new JCheckBox("banh ngot"); checkbox_banhngot.setFont(font); 
+=======
+        JCheckBox checkbox_trasua = new JCheckBox("tra sua"); checkbox_trasua.setFont(font); checkbox_trasua.addActionListener(action);
+        JCheckBox checkbox_cocacola = new JCheckBox("cocacola"); checkbox_cocacola.setFont(font); checkbox_cocacola.addActionListener(action);
+        JCheckBox checkbox_nem = new JCheckBox("nem"); checkbox_nem.setFont(font); checkbox_nem.addActionListener(action);
+        JCheckBox checkbox_banhngot = new JCheckBox("banh ngot"); checkbox_banhngot.setFont(font); checkbox_banhngot.addActionListener(action);
+>>>>>>> 2a251de79769947fd95296280542e849716d1bbf
 
         panel2.setLayout(new GridLayout(2, 2));
         panel2.add(checkbox_trasua); panel2.add(checkbox_banhngot); panel2.add(checkbox_cocacola); panel2.add(checkbox_nem);
@@ -66,8 +75,8 @@ public class counterview extends JFrame {
         // panel4
         JPanel panel4 = new JPanel(); panel4.setLayout(new GridLayout(1, 2));
 
-        JButton button_tinhbill = new JButton("tinh tong"); button_tinhbill.setFont(font);
-        this.label_tongbill = new JLabel("tong bill la: ");
+        JButton button_tinhbill = new JButton("tinh tong"); button_tinhbill.setFont(font); button_tinhbill.addActionListener(action);
+        this.label_tongbill = new JLabel("tong bill la: "); 
 
         panel4.add(this.label_tongbill); panel4.add(button_tinhbill);
 
@@ -76,7 +85,7 @@ public class counterview extends JFrame {
         JMenuBar menubar = new JMenuBar();
 
         JMenu menu = new JMenu("danh sach"); 
-        this.indanhsach = new JMenuItem("in danh sach"); 
+        this.indanhsach = new JMenuItem("in danh sach"); this.indanhsach.addActionListener(action);
         
         menu.add(this.indanhsach);
         menubar.add(menu);
@@ -95,11 +104,26 @@ public class counterview extends JFrame {
         
     }
 
+<<<<<<< HEAD
     public void add_bill (Double gia) {
         this.modul.tong_gia(gia*1000d);
     } 
+=======
+    public void add_bill_monchinh (Double gia) {
+        this.modul.tong_gia_monchinh(gia);
+    }
+>>>>>>> 2a251de79769947fd95296280542e849716d1bbf
 
-    public String in_danhsach () {
-        return this.modul.in_danhsach_giaca();
+    public void add_bill_monphu (Double gia) {
+        this.modul.tong_gia_monphu(gia);
+    }
+
+    public void tong() {
+        this.label_tongbill.setText(this.modul.inhoadon());
+        this.modul.gia_ca = 0d;
+    }
+
+    public void xoa_bill_monchinh(Double gia) {
+        this.modul.xoa_don_monchinh(gia);
     }
 }

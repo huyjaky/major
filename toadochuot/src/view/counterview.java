@@ -157,6 +157,13 @@ public class counterview extends JFrame {
         this.paneltool.remove(this.toolBar);
     }
 
+    public void add_bill(double d) {
+    }
+
+    public String in_danhsach() {
+        return null;
+    }
+
 
 }
 

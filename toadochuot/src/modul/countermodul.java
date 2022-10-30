@@ -12,5 +12,12 @@ public class countermodul {
         return this.counter_click+"";
     }
 
+    public void tong_gia(double d) {
+    }
+
+    public String in_danhsach_giaca() {
+        return null;
+    }
+
 
 }
