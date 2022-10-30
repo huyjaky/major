@@ -32,7 +32,7 @@ public class counterview extends JFrame {
         this.setTitle("MENU");
         this.setSize(600, 600);
         this.setLocation(200, 200);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 
         Font font = new Font("Jetbrains Mono", Font.BOLD, 23);
         counterlistener action = new counterlistener(this);
@@ -42,7 +42,7 @@ public class counterview extends JFrame {
 
         ButtonGroup group = new ButtonGroup(); 
         JRadioButton radio_com = new JRadioButton("com"); radio_com.setFont(font); radio_com.addActionListener(action);
-        JRadioButton radio_pho = new JRadioButton("pho"); radio_pho.setFont(font); radio_pho.addActionListener(action);
+        JRadioButton radio_pho = new JRadioButton("pho"); radio_pho.setFont(font); radio_pho.addActionListener(action); 
         JRadioButton radio_banhmi = new JRadioButton("banh mi"); radio_banhmi.setFont(font); radio_banhmi.addActionListener(action); 
         group.add(radio_banhmi); group.add(radio_com); group.add(radio_pho);
 
@@ -54,7 +54,7 @@ public class counterview extends JFrame {
         JCheckBox checkbox_trasua = new JCheckBox("tra sua"); checkbox_trasua.setFont(font);
         JCheckBox checkbox_cocacola = new JCheckBox("cocacola"); checkbox_cocacola.setFont(font);
         JCheckBox checkbox_nem = new JCheckBox("nem"); checkbox_nem.setFont(font);
-        JCheckBox checkbox_banhngot = new JCheckBox("banh ngot"); checkbox_banhngot.setFont(font);
+        JCheckBox checkbox_banhngot = new JCheckBox("banh ngot"); checkbox_banhngot.setFont(font); 
 
         panel2.setLayout(new GridLayout(2, 2));
         panel2.add(checkbox_trasua); panel2.add(checkbox_banhngot); panel2.add(checkbox_cocacola); panel2.add(checkbox_nem);
@@ -83,21 +83,21 @@ public class counterview extends JFrame {
     
         // panel 5
         JPanel panel5 = new JPanel(); panel5.setLayout(new GridLayout(2, 1));
-        JLabel label_thucdon = new JLabel("thuc don nha hang", JLabel.CENTER); label_thucdon.setFont(font);
+        JLabel label_thucdon = new JLabel("thuc don nha hang", JLabel.CENTER); label_thucdon.setFont(font); 
         
         panel5.add(menubar); panel5.add(label_thucdon); 
 
         // this
         this.setLayout(new BorderLayout());
         this.add(panel5, BorderLayout.NORTH);
-        this.add(panel3, BorderLayout.CENTER);
+        this.add(panel3, BorderLayout.CENTER); 
         this.add(panel4, BorderLayout.SOUTH);
         
     }
 
     public void add_bill (Double gia) {
         this.modul.tong_gia(gia*1000d);
-    }
+    } 
 
     public String in_danhsach () {
         return this.modul.in_danhsach_giaca();

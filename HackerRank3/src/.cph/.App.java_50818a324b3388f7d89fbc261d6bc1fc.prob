@@ -1,0 +1,1 @@
+{"name":"Local: App","url":"i:\\newjava\\major\\baicucac\\src\\App.java","tests":[{"id":1667122996196,"input":"9\n-100\n50\n0\n56.6\n90\n0.12\n.12\n02.34\n000.000","output":"90\n56.6\n50\n02.34\n0.12\n.12\n0\n000.000\n-100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"i:\\newjava\\major\\baicucac\\src\\App.java","group":"local","local":true}
