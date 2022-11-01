@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch testswing",
+            "request": "launch",
+            "mainClass": "testswing",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
             "name": "Launch vidu",
             "request": "launch",
             "mainClass": "view.vidu",
