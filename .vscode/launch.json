@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch testswing",
+            "request": "launch",
+            "mainClass": "testswing",
+            "projectName": "new_8137bd63"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",

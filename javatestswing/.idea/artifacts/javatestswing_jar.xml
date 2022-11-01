@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="javatestswing:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/javatestswing_jar</output-path>
+    <root id="archive" name="javatestswing.jar">
+      <element id="module-output" name="javatestswing" />
+    </root>
+  </artifact>
+</component>
