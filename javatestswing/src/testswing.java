@@ -20,14 +20,9 @@ public class testswing extends JFrame implements ActionListener {
     private JComboBox comboBox1;
     private JButton button1;
     private JLabel tong_bill;
-<<<<<<< HEAD
-    private JMenuItem history, reset_history;
-
-=======
     private JPanel panel_monphu;
     private JMenuItem history, reset_history;
     private countermodul modul = new countermodul();
->>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
 
     public testswing() {
         //countermodul modul = new countermodul();
@@ -133,16 +128,11 @@ public class testswing extends JFrame implements ActionListener {
         JMenuBar menuBar = new JMenuBar();
 
         JMenu home = new JMenu("home");
-<<<<<<< HEAD
-        t.history = new JMenuItem("history");
-        t.reset_history = new JMenuItem("reset_history");
-=======
         
         
         t.history = new JMenuItem("history"); t.history.addActionListener(t);
         t.reset_history = new JMenuItem("reset_history"); t.reset_history.addActionListener(t);
 
->>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
         home.add(t.history); home.add(t.reset_history); menuBar.add(home);
 
         t.panel_monchinh.add(t.comboBox1);
