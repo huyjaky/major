@@ -1,0 +1,1 @@
+{"name":"Local: App","url":"i:\\newjava\\major\\test\\src\\App.java","tests":[{"id":1667110201894,"input":"2367495770217142995264827948666809233066409497699870112003149352380375124855230068487109373226251983","output":"prime"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"i:\\newjava\\major\\test\\src\\App.java","group":"local","local":true}

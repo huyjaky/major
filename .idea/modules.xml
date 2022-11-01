@@ -4,19 +4,35 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CheckEmailModul/CheckEmailModul.iml" filepath="$PROJECT_DIR$/CheckEmailModul/CheckEmailModul.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerRank1/HackerRank1.iml" filepath="$PROJECT_DIR$/HackerRank1/HackerRank1.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/HackerRank2/HackerRank2.iml" filepath="$PROJECT_DIR$/HackerRank2/HackerRank2.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerRank5star/HackerRank5star.iml" filepath="$PROJECT_DIR$/HackerRank5star/HackerRank5star.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/HackerRank3/HackerRank3.iml" filepath="$PROJECT_DIR$/HackerRank3/HackerRank3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HackerRank4/HackerRank4.iml" filepath="$PROJECT_DIR$/HackerRank4/HackerRank4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HackerRank5/HackerRank5.iml" filepath="$PROJECT_DIR$/HackerRank5/HackerRank5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HackerRank5star/HackerRank5star.iml" filepath="$PROJECT_DIR$/HackerRank5star/HackerRank5star.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode1/LeetCode1.iml" filepath="$PROJECT_DIR$/LeetCode1/LeetCode1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode2/LeetCode2.iml" filepath="$PROJECT_DIR$/LeetCode2/LeetCode2.iml" />
+>>>>>>> 428922e53f5442c2f678ab0c5afffc51b910dbea
       <module fileurl="file://$PROJECT_DIR$/ProblemSolving/ProblemSolving.iml" filepath="$PROJECT_DIR$/ProblemSolving/ProblemSolving.iml" />
       <module fileurl="file://$PROJECT_DIR$/UIUXcoban/UIUXcoban.iml" filepath="$PROJECT_DIR$/UIUXcoban/UIUXcoban.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai2.8/bai2.8.iml" filepath="$PROJECT_DIR$/bai2.8/bai2.8.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitap/baitap.iml" filepath="$PROJECT_DIR$/baitap/baitap.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitapjava/baitapjava.iml" filepath="$PROJECT_DIR$/baitapjava/baitapjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/checktext/checktext.iml" filepath="$PROJECT_DIR$/checktext/checktext.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/new.iml" filepath="$PROJECT_DIR$/.idea/new.iml" />
       <module fileurl="file://$PROJECT_DIR$/quanlySinhVien/quanlySinhVien.iml" filepath="$PROJECT_DIR$/quanlySinhVien/quanlySinhVien.iml" />
       <module fileurl="file://$PROJECT_DIR$/regexHackerRank/regexHackerRank.iml" filepath="$PROJECT_DIR$/regexHackerRank/regexHackerRank.iml" />
       <module fileurl="file://$PROJECT_DIR$/regexHackerRank2/regexHackerRank2.iml" filepath="$PROJECT_DIR$/regexHackerRank2/regexHackerRank2.iml" />
       <module fileurl="file://$PROJECT_DIR$/regexHackerRank3/regexHackerRank3.iml" filepath="$PROJECT_DIR$/regexHackerRank3/regexHackerRank3.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/major.iml" filepath="$PROJECT_DIR$/.idea/major.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quanlySinhVien/quanlySinhVien.iml" filepath="$PROJECT_DIR$/quanlySinhVien/quanlySinhVien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regexHackerRank/regexHackerRank.iml" filepath="$PROJECT_DIR$/regexHackerRank/regexHackerRank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regexHackerRank2/regexHackerRank2.iml" filepath="$PROJECT_DIR$/regexHackerRank2/regexHackerRank2.iml" />
+>>>>>>> 428922e53f5442c2f678ab0c5afffc51b910dbea
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/toadochuot/toadochuot.iml" filepath="$PROJECT_DIR$/toadochuot/toadochuot.iml" />
     </modules>

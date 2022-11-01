@@ -8,11 +8,10 @@ class Solution{
             String IP = in.next();
             System.out.println(IP.matches(new MyRegex().pattern));
         }
-
     }
 }
 
-//Write your code here 
-class MyRegex {
-    String pattern = "^[0-255]{1}[.][0-255]{1}[.][0-255]{1}[.][0-255]{1}$";
+class MyRegex{
+    public String pattern = "[0-2][0-5][0-5]|[0-9]{2}|[0-9]";
 }
+
