@@ -7,22 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/javatestswing_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/modul/countermodul.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/modul/countermodul.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modul/countermodul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modul/countermodul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +74,7 @@
       <workItem from="1667226748819" duration="1921000" />
       <workItem from="1667271700212" duration="7753000" />
       <workItem from="1667282940772" duration="628000" />
-      <workItem from="1667288805692" duration="406000" />
+      <workItem from="1667288805692" duration="951000" />
     </task>
     <servers />
   </component>
