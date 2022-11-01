@@ -1,64 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/major.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CheckEmailModul/CheckEmailModul.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HackerRank1/HackerRank1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HackerRank3/HackerRank3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HackerRank4/HackerRank4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HackerRank5/HackerRank5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HackerRank5star/HackerRank5star.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LeetCode1/LeetCode1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LeetCode2/LeetCode2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProblemSolving/ProblemSolving.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UIUXcoban/UIUXcoban.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bai2.8/bai2.8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../baitap/baitap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../baitapjava/baitapjava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../checktext/checktext.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javatestswing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/modul/countermodul.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modul/countermodul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testswing.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quanlySinhVien/quanlySinhVien.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../regexHackerRank/regexHackerRank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../regexHackerRank2/regexHackerRank2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../toadochuot/toadochuot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeetCode1/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode1/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UIUXcoban/src/view/counterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIUXcoban/src/view/counterview.java" afterDir="false" />
+    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync from intellij">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testswing.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +64,24 @@
       <updated>1667212570164</updated>
       <workItem from="1667212571378" duration="11605000" />
       <workItem from="1667226748819" duration="1921000" />
+      <workItem from="1667266190376" duration="480000" />
+      <workItem from="1667266682372" duration="806000" />
     </task>
+    <task id="LOCAL-00001" summary="sync from intellij">
+      <created>1667266253775</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667266253775</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sync from intellij">
+      <created>1667266309061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667266309061</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +97,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sync from intellij" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync from intellij" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javatestswing$testswing.ic" NAME="testswing Coverage Results" MODIFIED="1667229306547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

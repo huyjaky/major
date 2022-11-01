@@ -18,6 +18,8 @@ public class testswing extends JFrame {
     private JComboBox comboBox1;
     private JButton button1;
     private JLabel tong_bill;
+    private JMenuItem history, reset_history;
+
 
     public testswing() {
         countermodul modul = new countermodul();
@@ -119,9 +121,9 @@ public class testswing extends JFrame {
         JMenuBar menuBar = new JMenuBar();
 
         JMenu home = new JMenu("home");
-        JMenuItem history = new JMenuItem("history");
-        JMenuItem reset_history = new JMenuItem("reset_history");
-        home.add(history); home.add(reset_history); menuBar.add(home);
+        t.history = new JMenuItem("history");
+        t.reset_history = new JMenuItem("reset_history");
+        home.add(t.history); home.add(t.reset_history); menuBar.add(home);
 
         t.panel_monchinh.add(t.comboBox1);
         t.panel_monchinh.add(menuBar);
