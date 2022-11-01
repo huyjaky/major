@@ -4,12 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
+import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.time.LocalDate;
 import java.util.Locale;
 
-public class testswing extends JFrame {
+public class testswing extends JFrame implements ActionListener {
     private JPanel panel1;
-    private JPanel panel_monphu;
     private JRadioButton COCACOLARadioButton;
     private JRadioButton BANHNGOTRadioButton;
     private JRadioButton KEMRadioButton;
@@ -18,9 +20,12 @@ public class testswing extends JFrame {
     private JComboBox comboBox1;
     private JButton button1;
     private JLabel tong_bill;
+    private JPanel panel_monphu;
+    private JMenuItem history, reset_history;
+    private countermodul modul = new countermodul();
 
     public testswing() {
-        countermodul modul = new countermodul();
+        //countermodul modul = new countermodul();
 
 
         TRASUARadioButton.addActionListener(new ActionListener() {
@@ -43,6 +48,9 @@ public class testswing extends JFrame {
                 Locale lc = new Locale("vi", "VN");
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
                 tong_bill.setText(nf.format(modul.getTong_bill()));
+                
+                LocalDate a = LocalDate.now();
+                modul.lich_su.add(a+" = " + DecimalFormat.getCurrencyInstance(new Locale("us", "US")).format(modul.getTong_bill()));
             }
         });
         comboBox1.addActionListener(new ActionListener() {
@@ -99,11 +107,12 @@ public class testswing extends JFrame {
 
                 if (f) {
                     modul.them_bill(3d);
-                } else {
-                    modul.bot_bill(3d);
+                    } else {
+                        modul.bot_bill(3d);
+                    }
                 }
-            }
-        });
+            });
+        
     }
 
     public static void main(String[] args) {
@@ -119,18 +128,35 @@ public class testswing extends JFrame {
         JMenuBar menuBar = new JMenuBar();
 
         JMenu home = new JMenu("home");
-        JMenuItem history = new JMenuItem("history");
-        JMenuItem reset_history = new JMenuItem("reset_history");
-        home.add(history); home.add(reset_history); menuBar.add(home);
+        
+        
+        t.history = new JMenuItem("history"); t.history.addActionListener(t);
+        t.reset_history = new JMenuItem("reset_history"); t.reset_history.addActionListener(t);
+
+        home.add(t.history); home.add(t.reset_history); menuBar.add(home);
 
         t.panel_monchinh.add(t.comboBox1);
         t.panel_monchinh.add(menuBar);
 
-        //Font font = new Font("JetBrains Mono", Font.BOLD, 27);
+        URL url = testswing.class.getResource("coding.png");
+        Image img = Toolkit.getDefaultToolkit().createImage(url);
+        t.setIconImage(img);
 
         t.setVisible(true);
-        //Font font = new Font("JetBrains Mono", Font.BOLD, 23);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        String s = e.getActionCommand();
+
+        if (s.equals("history")) {
+            JOptionPane.showMessageDialog(null, "Lich Su : \n" + modul.in_lich_su(), "LICH SU", JOptionPane.CLOSED_OPTION);
+        } else if (s.equals("reset_history")) {
+            if(JOptionPane.showConfirmDialog(null, "HANH DONG NAY SE XOA HET LICH SU CUA BAN BAN CHAC CHAN MUON TIEP TUC!", "CANH BAO!", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+                modul.reset_lich_su();
+            }
+        }
+    }
 
 }
