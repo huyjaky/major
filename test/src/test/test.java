@@ -9,4 +9,8 @@ public class test {
         System.out.println(s.replaceAll("/", ""));
         
     }
+<<<<<<< HEAD
 }
+=======
+}        sysout
+>>>>>>> 2aa0e9cb809efa6b22b6e49e89688ab686ec92c0

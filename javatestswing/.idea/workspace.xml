@@ -7,6 +7,13 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync 11/1/2022">
+      <change beforePath="$PROJECT_DIR$/../HackerRank5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HackerRank5/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/test/test.java" afterDir="false" />
+=======
+<<<<<<< HEAD
     <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync from intellij">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testswing.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.form" afterDir="false" />
@@ -16,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" afterDir="false" />
 >>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
+>>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +93,21 @@
 =======
       <workItem from="1667271700212" duration="7753000" />
       <workItem from="1667282940772" duration="628000" />
+<<<<<<< HEAD
+      <workItem from="1667288805692" duration="1422000" />
+      <workItem from="1667290974943" duration="566000" />
+      <workItem from="1667349445167" duration="1110000" />
+      <workItem from="1667365459417" duration="20000" />
+    </task>
+    <task id="LOCAL-00001" summary="sync 11/1/2022">
+      <created>1667289899811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667289899811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+=======
       <workItem from="1667288805692" duration="951000" />
 >>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
     </task>
@@ -103,6 +126,7 @@
       <updated>1667266309061</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+>>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,9 +145,16 @@
   </component>
 <<<<<<< HEAD
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="sync 11/1/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync 11/1/2022" />
+  </component>
+=======
+<<<<<<< HEAD
+  <component name="VcsManagerConfiguration">
     <MESSAGE value="sync from intellij" />
     <option name="LAST_COMMIT_MESSAGE" value="sync from intellij" />
 =======
+>>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
