@@ -1,36 +1,24 @@
 package view;
 
 import java.awt.BorderLayout;
-import java.awt.Button;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
-import modul.countermodul;
-
-import javax.swing.JTextField;
-import javax.swing.JRadioButton;
 import java.awt.GridLayout;
-import javax.swing.JCheckBox;
-import javax.swing.JButton;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JLabel;
-import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.awt.Label;
 
-import javax.swing.AbstractAction;
 import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+
+import modul.countermodul;
 
 public class counterview extends JFrame {
 
@@ -38,14 +26,7 @@ public class counterview extends JFrame {
 	private JTextField textField;
 	public JLabel ketqua;
 	public countermodul modul = new countermodul();
-	/**
-	 * Launch the application.
-	 */
-
-
-	/**
-	 * Create the frame.
-	 */
+	
 	public counterview() {
 		setTitle("TUONG TAC FILE");
 		
@@ -235,19 +216,6 @@ public class counterview extends JFrame {
 				}
 			}
 		});
-
-
-
-
-
-
-
-
-
-
 		setVisible(true);
-
-	} 
-
-	
+	}
 }
