@@ -6,11 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync 11/1/2022">
       <change beforePath="$PROJECT_DIR$/../HackerRank5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HackerRank5/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/test/test.java" afterDir="false" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync from intellij">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testswing.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
+=======
+    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" afterDir="false" />
+>>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
+>>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +87,13 @@
       <updated>1667212570164</updated>
       <workItem from="1667212571378" duration="11605000" />
       <workItem from="1667226748819" duration="1921000" />
+<<<<<<< HEAD
+      <workItem from="1667266190376" duration="480000" />
+      <workItem from="1667266682372" duration="806000" />
+=======
       <workItem from="1667271700212" duration="7753000" />
       <workItem from="1667282940772" duration="628000" />
+<<<<<<< HEAD
       <workItem from="1667288805692" duration="1422000" />
       <workItem from="1667290974943" duration="566000" />
       <workItem from="1667349445167" duration="1110000" />
@@ -89,6 +107,26 @@
       <updated>1667289899811</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+      <workItem from="1667288805692" duration="951000" />
+>>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
+    </task>
+    <task id="LOCAL-00001" summary="sync from intellij">
+      <created>1667266253775</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667266253775</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sync from intellij">
+      <created>1667266309061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667266309061</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+>>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,10 +143,18 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sync 11/1/2022" />
     <option name="LAST_COMMIT_MESSAGE" value="sync 11/1/2022" />
   </component>
+=======
+<<<<<<< HEAD
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sync from intellij" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync from intellij" />
+=======
+>>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -118,6 +164,7 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+>>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javatestswing$testswing.ic" NAME="testswing Coverage Results" MODIFIED="1667229306547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

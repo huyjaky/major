@@ -1,15 +1,19 @@
 package test;
 
-import java.math.BigDecimal;
-
-import javax.sound.midi.SoundbankResource;
+import java.io.File;
+import java.io.IOException;
 
 public class test {
     public static void main(String[] args) {
-        String a = "0";
-        System.out.println();
-        System.out.println("huy dep trai vl");
+        File folder1 = new File("I:/newjava/major/test/src/test2.txt");
+        System.out.println(folder1.exists());
+        try {
+            folder1.createNewFile();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.getStackTrace();
+            
+        }
         
-
     }
 }        sysout
