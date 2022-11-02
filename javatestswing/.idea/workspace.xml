@@ -6,9 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" afterDir="false" />
+    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync 11/1/2022">
+      <change beforePath="$PROJECT_DIR$/../HackerRank5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HackerRank5/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/test/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +76,19 @@
       <workItem from="1667226748819" duration="1921000" />
       <workItem from="1667271700212" duration="7753000" />
       <workItem from="1667282940772" duration="628000" />
-      <workItem from="1667288805692" duration="951000" />
+      <workItem from="1667288805692" duration="1422000" />
+      <workItem from="1667290974943" duration="566000" />
+      <workItem from="1667349445167" duration="1110000" />
+      <workItem from="1667365459417" duration="20000" />
     </task>
+    <task id="LOCAL-00001" summary="sync 11/1/2022">
+      <created>1667289899811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667289899811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +104,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sync 11/1/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync 11/1/2022" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
