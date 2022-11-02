@@ -124,7 +124,6 @@ public class testswing extends JFrame implements ActionListener {
         t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         t.panel_monchinh.setLayout(new GridLayout(2,1));
-
         JMenuBar menuBar = new JMenuBar();
 
         JMenu home = new JMenu("home");
