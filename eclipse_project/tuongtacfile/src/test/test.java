@@ -1,14 +1,13 @@
 package test;
 
-import java.io.File;
 
-import modul.countermodul;
 import view.counterview;
 
-public class test {
-    public static void main(String[] args) {
-        File folder = new File("I:/newjava/major");
-        new counterview();
+public class  test{
 
+    public static void main(String[] args)  {
+        new counterview();
     }
+    
+    // I:/testcopy/filetest/test1.txt
 }

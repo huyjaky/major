@@ -13,6 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
@@ -69,10 +70,15 @@ public class counterview extends JFrame {
 		
 		JRadioButton print_tree_folder = new JRadioButton("in ra cay thu muc");
 		
+		JRadioButton move_file = new JRadioButton("di chuyen file ");
+		
+		JRadioButton copy_file = new JRadioButton("copy file toi dia chi");
+		
+		JRadioButton write_file_txt = new JRadioButton("tao file va ghi len file do (txt)");
+	
 		//JButton button_action = new JButton("thuc thi");
 		
 		ButtonGroup group = new ButtonGroup(); group.add(checkexcute_1); group.add(can_read); group.add(can_write); group.add(print_url); group.add(print_namefile); group.add(check_folder_file); group.add(print_tree_folder);
-		JLabel label = new JLabel("");
 		panel_luachon.setLayout(new GridLayout(0, 3, 0, 0));
 		panel_luachon.add(checkexcute_1);
 		panel_luachon.add(can_read);
@@ -81,8 +87,15 @@ public class counterview extends JFrame {
 		panel_luachon.add(print_namefile);
 		panel_luachon.add(check_folder_file);
 		panel_luachon.add(print_tree_folder);
-		//panel_luachon.add(button_action);
-		panel_luachon.add(label);
+		panel_luachon.add(copy_file);
+		panel_luachon.add(move_file);
+		panel_luachon.add(write_file_txt);
+		
+		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("New radio button");
+		panel_luachon.add(rdbtnNewRadioButton_1);
+		
+		JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("New radio button");
+		panel_luachon.add(rdbtnNewRadioButton_2);
 
 		JPanel top = new JPanel();
 		contentPane.add(top, BorderLayout.NORTH);
@@ -214,6 +227,20 @@ public class counterview extends JFrame {
 					view_tree view = new view_tree();
 					view.textArea.setText(modul.tree_folder);
 				}
+			}
+		});
+
+		write_file_txt.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new create_file();
+			}
+		});
+
+		//tu phan nay la phan bi loi ko biet cach fix nen de lai nha
+		copy_file.addActionListener(new ActionListener() {
+			public void actionPerformed (ActionEvent arg0) {
+				view_copy copy = new view_copy();
+				
 			}
 		});
 		setVisible(true);
