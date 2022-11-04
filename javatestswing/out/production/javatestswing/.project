@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tuongtacfile</name>
+	<name>src</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,11 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-<<<<<<< HEAD
-			<id>1667383016097</id>
-=======
-			<id>1667388982951</id>
->>>>>>> 90f04fe9acba69076121f7cd74b7c340091594f6
+			<id>1667295585290</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

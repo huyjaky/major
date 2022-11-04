@@ -1,41 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="javatestswing:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync 11/1/2022">
-      <change beforePath="$PROJECT_DIR$/../HackerRank5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HackerRank5/src/App.java" afterDir="false" />
+    <list default="true" id="d8ee8d2c-79a4-447a-ab6d-c1b526ba1a54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../TuongTacFile/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/modul/countermodul.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/modul/countermodul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/counterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/counterview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/test/test.java" afterDir="false" />
-=======
-<<<<<<< HEAD
-    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="sync from intellij">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testswing.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testswing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testswing.java" afterDir="false" />
-=======
-    <list default="true" id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javatestswing/testswing.class" afterDir="false" />
->>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
->>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -43,26 +20,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GtezPblgN4IwTJtYY6fmV2UMAi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2H1zCgILTMrF1Adka7oSaJOEg5n" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/huyph/Desktop/new/javatestswing&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="testswing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testswing" />
@@ -80,53 +49,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e0558dc-e632-443e-ae00-e7fb7f98efc1" name="Changes" comment="" />
-      <created>1667212570164</created>
+      <changelist id="d8ee8d2c-79a4-447a-ab6d-c1b526ba1a54" name="Changes" comment="" />
+      <created>1667467253738</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667212570164</updated>
-      <workItem from="1667212571378" duration="11605000" />
-      <workItem from="1667226748819" duration="1921000" />
-<<<<<<< HEAD
-      <workItem from="1667266190376" duration="480000" />
-      <workItem from="1667266682372" duration="806000" />
-=======
-      <workItem from="1667271700212" duration="7753000" />
-      <workItem from="1667282940772" duration="628000" />
-<<<<<<< HEAD
-      <workItem from="1667288805692" duration="1422000" />
-      <workItem from="1667290974943" duration="566000" />
-      <workItem from="1667349445167" duration="1110000" />
-      <workItem from="1667365459417" duration="20000" />
+      <updated>1667467253738</updated>
+      <workItem from="1667467255553" duration="850000" />
     </task>
-    <task id="LOCAL-00001" summary="sync 11/1/2022">
-      <created>1667289899811</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1667289899811</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
-=======
-      <workItem from="1667288805692" duration="951000" />
->>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
-    </task>
-    <task id="LOCAL-00001" summary="sync from intellij">
-      <created>1667266253775</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1667266253775</updated>
-    </task>
-    <task id="LOCAL-00002" summary="sync from intellij">
-      <created>1667266309061</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1667266309061</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
->>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,31 +71,5 @@
         </entry>
       </map>
     </option>
-  </component>
-<<<<<<< HEAD
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="sync 11/1/2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="sync 11/1/2022" />
-  </component>
-=======
-<<<<<<< HEAD
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="sync from intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="sync from intellij" />
-=======
->>>>>>> 169e91ba4606d0861b944a2aeaff317bcd347123
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
->>>>>>> 81f53e9aee2dc44d5a71071a4f4813a735981dff
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/javatestswing$testswing.ic" NAME="testswing Coverage Results" MODIFIED="1667229306547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
