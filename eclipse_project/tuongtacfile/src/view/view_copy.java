@@ -15,7 +15,7 @@ public class view_copy extends JFrame {
 	private JTextField textField_1;
 
 	public view_copy() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -36,6 +36,8 @@ public class view_copy extends JFrame {
 		textField_1 = new JTextField();
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
+
+		this.dispose();
 	}
 
 }

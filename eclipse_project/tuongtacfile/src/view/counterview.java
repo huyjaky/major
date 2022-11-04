@@ -13,6 +13,7 @@ import java.io.File;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
 import javax.swing.AbstractButton;
@@ -96,7 +97,7 @@ public class counterview extends JFrame {
 		JRadioButton history = new JRadioButton("lich su");
 		//JButton button_action = new JButton("thuc thi");
 		
-		ButtonGroup group = new ButtonGroup(); group.add(checkexcute_1); group.add(can_read); group.add(can_write); group.add(print_url); group.add(print_namefile); group.add(check_folder_file); group.add(print_tree_folder);
+		ButtonGroup group = new ButtonGroup(); group.add(checkexcute_1); group.add(can_read); group.add(can_write); group.add(print_url); group.add(print_namefile); group.add(check_folder_file); group.add(print_tree_folder); group.add(move_file); group.add(copy_file); group.add(write_file_txt); group.add(history);
 		panel_luachon.setLayout(new GridLayout(0, 3, 0, 0));
 		panel_luachon.add(checkexcute_1);
 		panel_luachon.add(can_read);
@@ -174,6 +175,7 @@ public class counterview extends JFrame {
 				
 				modul.history += textField.getText() + "\n";
 				modul.history();
+
 				AbstractButton button = (AbstractButton) arg0.getSource();
 				boolean f = button.getModel().isSelected();
 				if (f) {
@@ -312,7 +314,7 @@ public class counterview extends JFrame {
 		//tu phan nay la phan bi loi ko biet cach fix nen de lai nha
 		copy_file.addActionListener(new ActionListener() {
 			public void actionPerformed (ActionEvent arg0) {
-				view_copy copy = new view_copy();
+				new view_copy();
 				
 			}
 		});
@@ -342,7 +344,6 @@ public class counterview extends JFrame {
 				modul.reset_history();
 				JOptionPane.showMessageDialog(null, "DA XOA THANH CONG", "MESSAGE", JOptionPane.CLOSED_OPTION);
 			}
-			
 		});
 		setVisible(true);
 	}
