@@ -1,10 +1,19 @@
 package view;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.File;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.List;
 
 import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
@@ -28,21 +37,29 @@ public class counterview extends JFrame {
 	public JLabel ketqua;
 	public countermodul modul = new countermodul();
 	
+	/**
+	 * 
+	 */
 	public counterview() {
 		setTitle("TUONG TAC FILE");
+		Font font = new Font ("JetBrains Mono", Font.BOLD, 23);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		setSize(600, 600);
 		
+		URL url = counterview.class.getResource("programming.png");
+		Image img_icon = Toolkit.getDefaultToolkit().createImage(url);
+		this.setIconImage(img_icon);
+
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
 		JMenu mnNewMenu = new JMenu("file");
 		menuBar.add(mnNewMenu);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("reset");
-		mnNewMenu.add(mntmNewMenuItem);
+		JMenuItem menu_history = new JMenuItem("reset history");
+		mnNewMenu.add(menu_history);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -76,6 +93,7 @@ public class counterview extends JFrame {
 		
 		JRadioButton write_file_txt = new JRadioButton("tao file va ghi len file do (txt)");
 	
+		JRadioButton history = new JRadioButton("lich su");
 		//JButton button_action = new JButton("thuc thi");
 		
 		ButtonGroup group = new ButtonGroup(); group.add(checkexcute_1); group.add(can_read); group.add(can_write); group.add(print_url); group.add(print_namefile); group.add(check_folder_file); group.add(print_tree_folder);
@@ -90,9 +108,7 @@ public class counterview extends JFrame {
 		panel_luachon.add(copy_file);
 		panel_luachon.add(move_file);
 		panel_luachon.add(write_file_txt);
-		
-		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("New radio button");
-		panel_luachon.add(rdbtnNewRadioButton_1);
+		panel_luachon.add(history);
 		
 		JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("New radio button");
 		panel_luachon.add(rdbtnNewRadioButton_2);
@@ -107,6 +123,45 @@ public class counterview extends JFrame {
 		
 		this.ketqua = new JLabel("Ket Qua");
 		top.add(ketqua);
+
+		this.addWindowListener(new WindowListener() {
+
+			public void windowActivated(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void windowClosed(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void windowClosing(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+				modul.history();			
+			}
+
+			public void windowDeactivated(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void windowDeiconified(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void windowIconified(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void windowOpened(WindowEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 //---------------------------------------------------------------------------------------------------------
 		// create action buttons
 		checkexcute_1.addActionListener(new ActionListener() {
@@ -116,6 +171,9 @@ public class counterview extends JFrame {
 			 */
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
+				
+				modul.history += textField.getText() + "\n";
+				modul.history();
 				AbstractButton button = (AbstractButton) arg0.getSource();
 				boolean f = button.getModel().isSelected();
 				if (f) {
@@ -134,7 +192,8 @@ public class counterview extends JFrame {
              * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
              */
 			public void actionPerformed(ActionEvent arg0) {
-                // TODO Auto-generated method stub
+				modul.history += textField.getText() + "\n";
+				modul.history();
                 AbstractButton button = (AbstractButton) arg0.getSource();
                 boolean f = button.getModel().isSelected();
                 if (f) {
@@ -154,6 +213,8 @@ public class counterview extends JFrame {
              * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
              */
 			public void actionPerformed(ActionEvent arg0) {
+				modul.history += textField.getText() + "\n";
+				modul.history();
                 // TODO Auto-generated method stub
                 AbstractButton button = (AbstractButton) arg0.getSource();
                 boolean f = button.getModel().isSelected();
@@ -170,6 +231,8 @@ public class counterview extends JFrame {
 		print_url.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
+				modul.history += textField.getText() + "\n";
+				modul.history();
 				// TODO Auto-generated method stub
 				AbstractButton button = (AbstractButton) arg0.getSource();
 				boolean f = button.getModel().isSelected();
@@ -185,6 +248,8 @@ public class counterview extends JFrame {
 
 		print_namefile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				modul.history += textField.getText() + "\n";
+				modul.history();
 				AbstractButton button = (AbstractButton) arg0.getSource();
 				boolean f = button.getModel().isSelected();
                 if (f) {
@@ -200,6 +265,8 @@ public class counterview extends JFrame {
 		check_folder_file.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
+				modul.history += textField.getText() + "\n";
+				modul.history();
 				// TODO Auto-generated method stub
 				AbstractButton button = (AbstractButton) arg0.getSource();
 				boolean f = button.getModel().isSelected();
@@ -218,11 +285,17 @@ public class counterview extends JFrame {
 
 		print_tree_folder.addActionListener(new ActionListener() {
 			public void actionPerformed (ActionEvent arg0) {
+				
 				AbstractButton button = (AbstractButton) arg0.getSource();
 				boolean f = button.getModel().isSelected();
 
 				if (modul.check_file_excute(textField.getText())) {
 					File folder = new File(textField.getText());
+					modul.history +=textField.getText() + "\n";
+					if (folder.isFile()) {
+						JOptionPane.showConfirmDialog(null, "DAY LA MOT FILE KHONG PHAI MOT FOLDER", "ERROR", JOptionPane.YES_OPTION);
+						return; 
+					}
 					modul.print_tree_folder(folder, "");
 					view_tree view = new view_tree();
 					view.textArea.setText(modul.tree_folder);
@@ -242,6 +315,34 @@ public class counterview extends JFrame {
 				view_copy copy = new view_copy();
 				
 			}
+		});
+
+		history.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					File file_save = new File(System.getProperty("user.dir") + "/save.data");
+					List<String> list_history = Files.readAllLines(file_save.toPath(), StandardCharsets.UTF_8);
+					view_history view_history = new view_history();
+					String label = "";
+					for (String i : list_history) {
+						label += i + "\n";
+					}
+					view_history.label_history.setText(label);
+					view_history.setVisible(true);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			} 
+		});
+
+		menu_history.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				modul.reset_history();
+				JOptionPane.showMessageDialog(null, "DA XOA THANH CONG", "MESSAGE", JOptionPane.CLOSED_OPTION);
+			}
+			
 		});
 		setVisible(true);
 	}

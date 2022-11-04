@@ -1,6 +1,5 @@
 package view;
 
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -12,7 +11,6 @@ import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.PrintWriter;
 
 import javax.swing.JLabel;
@@ -28,11 +26,9 @@ public class create_file extends JFrame {
 	protected JTextArea textArea;
 	private JButton btnWrite;
 	private countermodul modul;
-	/**
-	 * Create the frame.
-	 */
+
 	public create_file() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -76,5 +72,6 @@ public class create_file extends JFrame {
 			}
 		});
 	}
+	
 
 }
