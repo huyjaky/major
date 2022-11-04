@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8ee8d2c-79a4-447a-ab6d-c1b526ba1a54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../TuongTacFile/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/modul/countermodul.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/modul/countermodul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/test/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/counterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/counterview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javatestswing_jar/javatestswing.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save.data" beforeDir="false" afterPath="$PROJECT_DIR$/../save.data" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +20,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="testswing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testswing" />
@@ -55,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667467253738</updated>
       <workItem from="1667467255553" duration="850000" />
+      <workItem from="1667555631246" duration="144000" />
     </task>
     <servers />
   </component>

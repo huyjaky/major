@@ -1,6 +1,5 @@
 package modul;
 
-import java.awt.List;
 import java.io.File;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
@@ -79,9 +78,9 @@ public class countermodul {
     public void history() {
         ZonedDateTime zd = ZonedDateTime.now();
         this.history = this.history.trim();
-        if (check_file_excute("I:/newjava/major/save.data")) {
+        if (check_file_excute(System.getProperty("user.dir") + "/save.data")) {
             try {
-                File file_save = new File("I:/newjava/major/save.data");
+                File file_save = new File(System.getProperty("user.dir") + "/save.data");
                 try {
                     if (this.history == "") {
                         Files.write(file_save.toPath(), (zd + "\n" +"null \n").getBytes(), StandardOpenOption.APPEND);
