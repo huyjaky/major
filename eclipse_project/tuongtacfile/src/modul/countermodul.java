@@ -1,6 +1,5 @@
 package modul;
 
-import java.awt.List;
 import java.io.File;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
