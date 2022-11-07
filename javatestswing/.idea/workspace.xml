@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8ee8d2c-79a4-447a-ab6d-c1b526ba1a54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/counterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/counterview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/view_history.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse_project/tuongtacfile/src/view/view_history.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../major.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/../major.code-workspace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../save.data" beforeDir="false" afterPath="$PROJECT_DIR$/../save.data" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +56,7 @@
       <updated>1667467253738</updated>
       <workItem from="1667467255553" duration="850000" />
       <workItem from="1667555631246" duration="144000" />
+      <workItem from="1667571519341" duration="9000" />
     </task>
     <servers />
   </component>

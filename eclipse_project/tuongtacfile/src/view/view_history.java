@@ -1,16 +1,14 @@
 package view;
 
 import java.awt.BorderLayout;
-import java.awt.Frame;
+import java.awt.TextArea;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
-import java.awt.TextArea;
 
 public class view_history extends JFrame {
 

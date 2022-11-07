@@ -1,98 +1,5 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "Launch test",
-            "request": "launch",
-            "mainClass": "test.test"
-        },
-        {
-            "type": "java",
-            "name": "Launch counterview",
-            "request": "launch",
-            "mainClass": "view.counterview",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch view",
-            "request": "launch",
-            "mainClass": "view.view",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch test",
-            "request": "launch",
-            "mainClass": "test/test.test",
-            "projectName": "test"
-        },
-        {
-            "type": "java",
-            "name": "Launch test",
-            "request": "launch",
-            "mainClass": "test/test.test",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch test",
-            "request": "launch",
-            "mainClass": "test.test",
-            "projectName": "UIUXcoban_src"
-        },
-        {
-            "type": "java",
-            "name": "Launch testswing",
-            "request": "launch",
-            "mainClass": "testswing",
-            "projectName": "src"
-        },
-        {
-            "type": "java",
-            "name": "Launch vidu",
-            "request": "launch",
-            "mainClass": "view.vidu",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch testswing",
-            "request": "launch",
-            "mainClass": "testswing",
-            "projectName": "new_8137bd63"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch testswing",
-            "request": "launch",
-            "mainClass": "testswing",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "Solution",
-            "projectName": "major_797800ae"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
         {
             "type": "java",
             "name": "Launch App",
@@ -104,8 +11,7 @@
             "type": "java",
             "name": "Launch test",
             "request": "launch",
-            "mainClass": "test.test",
-            "projectName": "major_797800ae"
+            "mainClass": "test.test"
         }
     ]
 }
