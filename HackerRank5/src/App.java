@@ -1,18 +1,13 @@
-import java.util.Scanner;
+import javax.swing.text.html.HTMLDocument.RunElement;
 
-class Solution{
-
-    public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
-        while(in.hasNext()){
-            String IP = in.next(); 
-            
-            System.out.println(IP.matches(new MyRegex().pattern)); 
+class App {
+    public int climbStairs(int n) {
+        Integer n1 = 1, n2 = 2, sum = 3;
+        for (int i = 0; i < n; i++) {
+            n1 = n2;
+            n2 = sum;
+            sum = n1 + n2;
         }
+        return n1;
     }
 }
-
-class MyRegex{
-    public String pattern = "[0-2][0-5][0-5]|[0-9]{2}|[0-9]";
-}
-

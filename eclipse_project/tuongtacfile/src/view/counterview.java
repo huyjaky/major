@@ -296,7 +296,7 @@ public class counterview extends JFrame {
 					modul.history +=textField.getText() + "\n";
 					if (folder.isFile()) {
 						JOptionPane.showConfirmDialog(null, "DAY LA MOT FILE KHONG PHAI MOT FOLDER", "ERROR", JOptionPane.YES_OPTION);
-						return; 
+						return;
 					}
 					modul.print_tree_folder(folder, "");
 					view_tree view = new view_tree();
